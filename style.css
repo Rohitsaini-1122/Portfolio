@@ -441,34 +441,7 @@ nav {
 .reel-card:hover .reel-overlay { opacity: 1; pointer-events: auto; }
 .reel-card:hover .reel-tag { opacity: 0; }
 .reel-card:hover .overlay-content { transform: translateY(0); }
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 54px;
-    height: 54px;
-    background: rgba(255,255,255,0.18);
-    backdrop-filter: blur(4px);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    transition: opacity 0.3s, transform 0.3s;
-    border: 2px solid rgba(255,255,255,0.4);
-}
-
-.reel-card:hover .play-icon {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
-}
-
-.play-icon svg { margin-left: 4px; }
-
 .reel-card.playing iframe { pointer-events: auto; }
-.reel-card.playing .play-icon { display: none; }
 .reel-card.playing .reel-overlay { pointer-events: none; opacity: 0 !important; }
 .reel-card.playing .reel-tag { opacity: 0; }
 
